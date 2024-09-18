@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Play Wordle</title>
+	<link rel="stylesheet" type="text/css" href="wordleoptimised.css">
+</head>
+
+<body>
+	<div id="header">Wordle</div>
+	<div id="scoreView" hidden>
+		<h2 id="scoreViewHeader">greeting</h2>
+		<h3 id="scoreViewScore">score</h3>
+		<p id="scoreViewSummary">summary</p>
+		<button id="newGameButton" onclick="startGame()">New Game</button>
+		<button id="viewWordle"
+			onclick="document.getElementById('mainView').hidden = false;document.getElementById('keyboard').style.display = 'none';">View
+			Wordle</button>
+	</div>
+	<div id="mainView">
+		<div id="gameboard">
+			<p>
+				<span class="charBox" id="charBox11">?</span>
+				<span class="charBox" id="charBox12">?</span>
+				<span class="charBox" id="charBox13">?</span>
+				<span class="charBox" id="charBox14">?</span>
+				<span class="charBox" id="charBox15">?</span>
+			</p>
+			<p>
+				<span class="charBox" id="charBox21">?</span>
+				<span class="charBox" id="charBox22">?</span>
+				<span class="charBox" id="charBox23">?</span>
+				<span class="charBox" id="charBox24">?</span>
+				<span class="charBox" id="charBox25">?</span>
+			</p>
+			<p>
+				<span class="charBox" id="charBox31">?</span>
+				<span class="charBox" id="charBox32">?</span>
+				<span class="charBox" id="charBox33">?</span>
+				<span class="charBox" id="charBox34">?</span>
+				<span class="charBox" id="charBox35">?</span>
+			</p>
+			<p>
+				<span class="charBox" id="charBox41">?</span>
+				<span class="charBox" id="charBox42">?</span>
+				<span class="charBox" id="charBox43">?</span>
+				<span class="charBox" id="charBox44">?</span>
+				<span class="charBox" id="charBox45">?</span>
+			</p>
+			<p>
+				<span class="charBox" id="charBox51">?</span>
+				<span class="charBox" id="charBox52">?</span>
+				<span class="charBox" id="charBox53">?</span>
+				<span class="charBox" id="charBox54">?</span>
+				<span class="charBox" id="charBox55">?</span>
+			</p>
+			<p>
+				<span class="charBox" id="charBox61">?</span>
+				<span class="charBox" id="charBox62">?</span>
+				<span class="charBox" id="charBox63">?</span>
+				<span class="charBox" id="charBox64">?</span>
+				<span class="charBox" id="charBox65">?</span>
+			</p>
+		</div>
+		<div id="keyboard">
+			<div id="row1">
+				<button id="qButton" onclick="addChar('q')">q</button>
+				<button id="wButton" onclick="addChar('w')">w</button>
+				<button id="eButton" onclick="addChar('e')">e</button>
+				<button id="rButton" onclick="addChar('r')">r</button>
+				<button id="tButton" onclick="addChar('t')">t</button>
+				<button id="yButton" onclick="addChar('y')">y</button>
+				<button id="uButton" onclick="addChar('u')">u</button>
+				<button id="iButton" onclick="addChar('i')">i</button>
+				<button id="oButton" onclick="addChar('o')">o</button>
+				<button id="pButton" onclick="addChar('p')">p</button>
+			</div>
+			<div id="row2">
+				<button id="aButton" onclick="addChar('a')">a</button>
+				<button id="sButton" onclick="addChar('s')">s</button>
+				<button id="dButton" onclick="addChar('d')">d</button>
+				<button id="fButton" onclick="addChar('f')">f</button>
+				<button id="gButton" onclick="addChar('g')">g</button>
+				<button id="hButton" onclick="addChar('h')">h</button>
+				<button id="jButton" onclick="addChar('j')">j</button>
+				<button id="kButton" onclick="addChar('k')">k</button>
+				<button id="lButton" onclick="addChar('l')">l</button>
+			</div>
+			<div id="row3">
+				<button id="zButton" onclick="addChar('z')">z</button>
+				<button id="xButton" onclick="addChar('x')">x</button>
+				<button id="cButton" onclick="addChar('c')">c</button>
+				<button id="vButton" onclick="addChar('v')">v</button>
+				<button id="bButton" onclick="addChar('b')">b</button>
+				<button id="nButton" onclick="addChar('n')">n</button>
+				<button id="mButton" onclick="addChar('m')">m</button>
+			</div>
+			<div class="row4">
+				<button onclick="submitWord()">Submi/Enter</button>
+				<button onclick="delChar()">Backspace/-</button>
+				<button onclick="clearRow()">Clear/_</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="wordleoptimised.js"></script>
+
+</html>

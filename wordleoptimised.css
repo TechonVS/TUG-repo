@@ -1,0 +1,75 @@
+body {
+  background-color: rgb(0, 0, 0);
+  /*rgb(255,255,255)inverted value*/
+  color: rgb(255, 255, 255);
+  /*rgb(0,0,0)inverted value*/
+  margin: 0px;
+}
+
+div#header {
+  margin: 0px;
+  width: 100%;
+  font-size: 25px;
+  background-color: rgb(100, 100, 100);
+  /*rgb(155,155,155)inverted value*/
+  text-align: center;
+}
+
+div#gameboard {
+  margin: auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+	min-width:210px;
+}
+
+span.charBox {
+  border: 2px solid rgb(75, 75, 75);
+  /*rgb(180,180,180)inverted value*/
+  padding: 5px 10px 5px 10px;
+  /*top right bpttom left*/
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  /*rgb(0,0,0)inverted value*/
+  font-size: xx-large;
+}
+
+div#keyboard {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+  text-align: center;
+  min-width: 355px;
+}
+
+button {
+  background-color: rgb(60, 60, 60)
+    /*rgb(195,195,195)inverted value*/
+  ;
+  color: rgb(200, 200, 200);
+  /*rgb(55,55,55)inverted value*/
+}
+
+div#scoreView {
+  background-color: rgb(75, 75, 75);
+  /*rgb(180,180,180)inverted value*/
+  color: rgb(200, 200, 200);
+  /*rgb(55,55,55)inverted value*/
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#newGameButton {
+  background-color: green;
+}
+
+#viewWordle {
+  background-color: red;
+}
+
+div#keyboard div button {
+  padding: 3%;
+}

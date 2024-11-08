@@ -15,9 +15,20 @@ a {
   text-decoration: none;
   border-radius: 5px;
   font-family: 'Cabin', sans-serif;
-
 }
-c {
+
+a.bigger {
+  display: inline-block;
+  padding: 20px;
+  margin: 5px;
+  background-color: #669d34;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Cabin', sans-serif;
+}
+
+a.blue {
   display: inline-block;
   padding: 10px;
   margin: 5px;
@@ -26,3 +37,9 @@ c {
   text-decoration: none;
   border-radius: 5px;
   font-family: 'Cabin', sans-serif;
+}
+
+landingPageImg {
+     width: 300px; /* Sets the image width */
+    height: 200px; /* Sets the image height */
+}

@@ -16,6 +16,9 @@ a {
   border-radius: 5px;
   font-family: 'Cabin', sans-serif;
 }
+a:hover {
+  background-color: #2F6B14;
+}
 
 a.bigger {
   display: inline-block;
@@ -28,6 +31,11 @@ a.bigger {
   font-family: 'Cabin', sans-serif;
 }
 
+a.bigger:hover {
+  background-color: #2F6B14;
+}
+
+
 a.blue {
   display: inline-block;
   padding: 10px;
@@ -38,6 +46,11 @@ a.blue {
   border-radius: 5px;
   font-family: 'Cabin', sans-serif;
 }
+
+a.blue:hover {
+  background-color: #1A2EFF;
+}
+
 
 landingPageImg {
      width: 300px; /* Sets the image width */

@@ -2,6 +2,12 @@ html {
   height: 100%;
   width: 100%;
 }
+
+body {
+  background: #333333;
+  color: #ffffff;
+}
+
 textlol{
   font-family: 'Cabin', sans-serif;
 }
@@ -13,8 +19,9 @@ a {
   background-color: #669d34;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-family: 'Cabin', sans-serif;
+  box-shadow: 10px;
 }
 a:hover {
   background-color: #2F6B14;
